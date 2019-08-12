@@ -1,0 +1,26 @@
+html {overflow: -moz-scrollbars-vertical;}
+
+#map {
+		height:100%;
+	  z-index: 2;
+}
+
+footer{
+    margin-top: 20px;
+    text-align:center;
+}
+
+#error_box{
+    color: red;
+}
+
+.search-box {
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	z-index: 1;
+}
+
+#search-routing-form {
+	display: none;
+}

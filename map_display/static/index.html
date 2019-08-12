@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- from https://medium.com/attentive-ai/working-with-openlayers-4-part-1-creating-the-first-application-9ab27bbd7a62 -->
+
+<html>
+<head>
+	<title>NoGoogleMap</title>
+	<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/main.css" type="text/css">
+</head>
+<body>
+
+	<div class="search-box">
+		<!-- search form location-->
+		<form class="form-inline md-form mr-auto mb-4" id="search-single-form">
+			<input class="form-control mr-sm-2" name="single-address" id="post-single-address" type="text" placeholder="Search NoGoogleMap" aria-label="Search" required/>
+			<button class="btn glyphicon glyphicon-search" type="submit"></button>
+			<button class="btn glyphicon glyphicon-arrow-right" id="switch-routing"></button>
+		</form>
+
+		<!-- search form routing-->
+		<form class="form-inline md-form mr-auto mb-4" id="search-routing-form">
+			<input class="form-control mr-sm-2" type="text" name="source" id="post-source" placeholder="From" aria-label="Search" required/>
+			<input class="form-control mr-sm-2" type="text" name="destination" id="post-destination" placeholder="To" aria-label="Search" required/>
+			<button class="btn glyphicon glyphicon-search" type="submit"></button>
+			<button class="btn glyphicon glyphicon-map-marker" id="switch-location"></button>
+		</form>
+
+		<div class="" id="error-box">
+			<!-- Show error if any -->
+		</div>
+	</div>
+
+	<div id="map">
+		<!-- Show map -->
+	</div>
+</body>
+<footer>
+	<a href='/credits.html'>credits</a>
+</footer>
+
+<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script> <!-- Openlayesr JS fIle -->
+<script src="js/map.js"></script> <!-- Our map file -->
+<script src="js/api.js"></script>
+<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,18 @@
+start a container
+
+docker run -dit -p=8080:8080 --name cscc09_route sinclairdong/cscc09:route /bin/bash
+
+
+stop or start all container
+
+docker container stop $(docker container ls -aq)
+
+
+log into a container is runing
+
+docker exec -it cscc09 /bin/bash
+
+
+start psql
+
+ sudo service postgresql start

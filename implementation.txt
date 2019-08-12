@@ -1,0 +1,42 @@
+Download data from open street map's overpass api:
+	Overpass API https://wiki.openstreetmap.org/wiki/Overpass_API
+	Openstreet map https://www.openstreetmap.org/search?query=toronto#map=11/43.6542/-79.3872
+	
+	At this point you suppose to have a osm file
+	
+Then use overpass turbo to convert the map data from OSM to geoJson:
+	overpass turbo/osmtogeojson: 
+		https://github.com/tyrasd/osmtogeojson
+		https://overpass-turbo.eu/ (this link only work for small data testing purpose only)
+
+Now you suppose to have a geojson data file can be found in here(size reduced due to github limit include only scarbrough)
+	https://github.com/UTSCC09/project-nogooglemap/blob/master/routes_finding/DATA/export.geojson
+
+Use geoJson.io to check and trim the data
+	http://geojson.io/#map=2/20.0/0.0
+	
+We use postgresql to store all of our data
+	https://www.postgresql.org/
+
+Use gdal-bin to import the geojson file into postgresql
+	https://www.gdal.org/ogr2ogr.html
+
+Use pgrouting to anaylis the data(ganerate node and edges) and provids calculation result
+	https://pgrouting.org/
+
+Use geoserver to host that map view(who handle request, perform query and send result)
+	http://geoserver.org/
+	
+The geoserver is hosted by TomCat
+	http://tomcat.apache.org/
+	
+	
+Other technology
+	Location look up: Open address provids data
+	https://openaddresses.io/
+	
+	Openlayers for map display:
+	https://openlayers.org/
+	
+	map data provider:
+	https://www.openstreetmap.org/export#map=11/43.6540/-79.2670

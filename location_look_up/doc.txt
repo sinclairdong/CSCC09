@@ -1,0 +1,15 @@
+CREATE TABLE addresses (
+  lon character varying,
+  lat character varying,
+  housenumber character varying,
+  street character varying,
+  city character varying
+);
+
+COPY addresses
+FROM 'city_of_toronto.csv'
+WITH csv;
+
+
+curl http://localhost:3001/api/address -d '{"housenumber": "22", "street": "lloyd george ave"}' -X POST -H "Content-Type:application/json"
+

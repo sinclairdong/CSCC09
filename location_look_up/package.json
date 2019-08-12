@@ -1,0 +1,23 @@
+{
+  "name": "cscc09_llu",
+  "version": "1.0.0",
+  "description": "nogooglemap",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/UTSCC09/project-nogooglemap.git"
+  },
+  "keywords": [
+    "address"
+  ],
+  "author": "Chaoyue Xi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg": "^7.9.0"
+  }
+}
