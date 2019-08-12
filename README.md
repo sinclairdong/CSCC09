@@ -1,5 +1,10 @@
 # project-nogooglemap
 
+
+**THIS is a stand alone app. It does not require any third party API**
+
+Implementation detail: https://github.com/UTSCC09/project-nogooglemap/blob/master/implementation.txt
+
 Link: https://nogooglemap.canadacentral.cloudapp.azure.com/
 
 Video: https://youtu.be/rTSFfeZskVI
